@@ -22,14 +22,17 @@ function Cart() {
     }
 
     return (
-        <main className="cart-page">
-            <h1>Check out</h1>
-            {cartItemElements}
-            <p className="total-cost">Total: {calculateTotal}</p>
-            {cartItems.length > 0 && <div className="order-button">
-                <button onClick={placeOrder}>{buttonText}</button>
-            </div>}
-        </main>
+        <div className="container">
+            <div className="cart-page">
+                <h1>Check out</h1>
+                {cartItemElements}
+                <p className="total-cost">Total: {calculateTotal}</p>
+                {cartItems.length > 0 && <div className="order-button">
+                    <button onClick={placeOrder}>{buttonText}</button>
+                </div>}
+            </div>
+        </div>
+        
     )
 }
 

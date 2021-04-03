@@ -10,9 +10,11 @@ function Photos() {
         return <Image key={item.id} img={item} className={getClass(index)} />
     })
     return (
-        <main className="photos">
-            {photos}
-        </main>
+        <div className="container">
+            <div className="photos">
+                {photos}
+            </div>
+        </div>
     )
 }
 

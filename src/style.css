@@ -12,7 +12,7 @@ html, body {
     padding: 0;
 }
 
-main.photos {
+.photos {
     padding: 10px;
     display: grid;
     grid-gap: 2px;
@@ -21,7 +21,27 @@ main.photos {
     grid-auto-flow: dense;
 }
 
-main.cart-page {
+.container {
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) { 
+    .container {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) { 
+    .container {
+        width: 90%;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 900px;
+    }
+}
+
+.cart-page {
     padding: 10px;
 }
 
@@ -59,6 +79,8 @@ div.order-button > button:disabled {
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
+    padding: 1em;
+    background-color: rgb(240, 239, 239);
 }
 
 .cart-item img {
