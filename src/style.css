@@ -152,8 +152,9 @@ header {
 
 a {
     text-decoration: none;
+    color: var(--light-blue);
 }
 
-a:visited { color: var(--light-blue); }
-a:hover { color: var(--light-blue); }
-a:active { color: var(--light-blue); }
+a:visited { color: var(--black); }
+a:hover { color: var(--black); }
+a:active { color: var(--black); }
