@@ -35,8 +35,12 @@ const ContextProvider = ({children}) => {
         setCartItems(updatedArr)
     }
 
+    const emptyCart = () => {
+        setCartItems([])
+    }
+
     return (
-        <Context.Provider value={{photosArray, toggleFavorite, addToCart, cartItems, removeFromCart}}>
+        <Context.Provider value={{photosArray, toggleFavorite, addToCart, cartItems, removeFromCart, setCartItems, emptyCart}}>
             {children}
         </Context.Provider>
     )

@@ -24,7 +24,7 @@ function Image({className, img}) {
         } else if (hovered) {
             return <i onClick={() => addToCart(img)} className="ri-add-circle-line cart"></i>
         }
-    }  
+    }
 
     return (
         <div onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} className={`image-container${adjustClass}`}>
