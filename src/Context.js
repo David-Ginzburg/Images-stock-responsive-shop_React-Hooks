@@ -12,8 +12,21 @@ const ContextProvider = ({children}) => {
             .catch(err => {throw new Error(err)})
     }, [])
 
+    const toggleFavorite = (id) => {
+        const updatedArr = photosArray.map(photo => {
+            if (photo.id === id) {
+                return {
+                    ...photo,
+                    isFavorite: !photo.isFavorite
+                }
+            }
+            return photo
+        })
+        setPhotosArray(updatedArr)
+    }
+
     return (
-        <Context.Provider value={{photosArray}}>
+        <Context.Provider value={{photosArray, toggleFavorite}}>
             {children}
         </Context.Provider>
     )
