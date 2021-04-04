@@ -163,7 +163,7 @@ a:active { color: var(--black); }
 .ri-heart-line.favorite,
 .ri-heart-fill.favorite,
 .ri-add-circle-line.cart,
-.ri-add-circle-fill.cart {
+.ri-shopping-cart-fill.cart {
     font-size: 2rem;
 }
 
@@ -171,7 +171,7 @@ a:active { color: var(--black); }
     .ri-heart-line.favorite,
     .ri-heart-fill.favorite,
     .ri-add-circle-line.cart,
-    .ri-add-circle-fill.cart {
+    .ri-shopping-cart-fill.cart {
         font-size: 1.8rem;
     }
 }
@@ -180,7 +180,7 @@ a:active { color: var(--black); }
     .ri-heart-line.favorite,
     .ri-heart-fill.favorite,
     .ri-add-circle-line.cart,
-    .ri-add-circle-fill.cart {
+    .ri-shopping-cart-fill.cart {
         font-size: 1.5rem;
     }
 }
