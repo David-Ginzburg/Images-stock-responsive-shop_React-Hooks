@@ -158,3 +158,29 @@ a {
 a:visited { color: var(--black); }
 a:hover { color: var(--black); }
 a:active { color: var(--black); }
+
+
+.ri-heart-line.favorite,
+.ri-heart-fill.favorite,
+.ri-add-circle-line.cart,
+.ri-add-circle-fill.cart {
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) { 
+    .ri-heart-line.favorite,
+    .ri-heart-fill.favorite,
+    .ri-add-circle-line.cart,
+    .ri-add-circle-fill.cart {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ri-heart-line.favorite,
+    .ri-heart-fill.favorite,
+    .ri-add-circle-line.cart,
+    .ri-add-circle-fill.cart {
+        font-size: 1.5rem;
+    }
+}
